@@ -1,0 +1,5 @@
+The reset button must not only reset the GPS view but also the selected layers in the below dropdown.
+
+The app must allow me to select layers and unselect the layers an d the map must be reactive once I un-select a layer in the Data Theme dropdown.When I change the selected layer to another one the map must react and change the layer viewed in the leaflet map.
+
+Incorporate an attribute table that shows a table on the attributes of the data currently in view. Make this table small and dockable and minimizable . The table must have a refresh button that everytime I click refresh the view of the table updates to what data is visible in the leaflet map.

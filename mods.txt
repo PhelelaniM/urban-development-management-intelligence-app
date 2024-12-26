@@ -1,0 +1,90 @@
+In the Municipal Data Centre Tab Make the following modifications on top of the app - dont remove any functionality but add:
+
+There are 2 “Get More Insights” buttons and only 1 works. Proceed to remove the one that isnt a button and change the text of the button to “Generate Urban Insights”.
+
+
+The themes here must be as follows:
+
+Administration
+Transport
+Building and Land-use
+
+
+the first drop down is City of Joburg then the following shapefiles need to be visible and clickable in the folium map , I will also help with variable names but on the app in the front end there must not be any underscores , only in the backend:
+
+Theme 1 Administration :
+
+Wards_2021 = "C:\Users\urban\Documents\App 2\COJ\Jozi\COJ Wards 2021\COJ_Wards_2021.shp"
+
+Admin_Regions_2016 = "C:\Users\urban\Documents\App 2\COJ\Jozi\Admin_Regions_2016\Admin_Regions_2016.shp"
+
+Census_townships_2011 = "C:\Users\urban\Documents\App 2\COJ\Jozi\Census_Townships_2011\Census_Townships_2011.shp"
+
+Council_Owned_Land = "C:\Users\urban\Documents\App 2\COJ\Jozi\Council_Owned_Land\Council_Owned_Land.shp"
+
+Economic_Nodes = "C:\Users\urban\Documents\App 2\COJ\Jozi\Economic_Nodes\Economic_Nodes.shp"
+
+Registered_Agricultural_Holdings = "C:\Users\urban\Documents\App 2\COJ\Jozi\Registered_Agricultural_Holdings\Registered_Agricultural_Holdings.shp"
+
+Proclaimed_Towwnships = "C:\Users\urban\Documents\App 2\COJ\Jozi\Proclaimed_Townships\Proclaimed_Townships.shp"
+
+Registered_Farm_Portions = "C:\Users\urban\Documents\App 2\COJ\Jozi\Registered_Farm_Portions\Registered_Farm_Portions.shp"
+
+Voting_Districts_JHB = "C:\Users\urban\Documents\App 2\COJ\Jozi\Voting_Districts_JHB\Voting_Districts_JHB.shp"
+
+
+Theme 2 Transport:
+
+BRT_Routes = "C:\Users\urban\Documents\App 2\COJ\Jozi\BRT_Route\BRT_Route.shp"
+
+BRT_Stations = "C:\Users\urban\Documents\App 2\COJ\Jozi\BRT_Stations\BRT_Stations.shp"
+
+BRT_Stops = "C:\Users\urban\Documents\App 2\COJ\Jozi\BRT_Stops\BRT_Stops.shp"
+
+Gautrain_Bus_Stops = "C:\Users\urban\Documents\App 2\COJ\Jozi\Gautrain_Bus_Stops\Gautrain_Bus_Stops.shp"
+
+Gautrain_Stations = "C:\Users\urban\Documents\App 2\COJ\Jozi\Gautrain_Stations\Gautrain_Stations.shp"
+
+JRA_Traffic_Signals = "C:\Users\urban\Documents\App 2\COJ\Jozi\JRA_Traffic_Signals\JRA_Traffic_Signals.shp"
+
+
+
+Theme 3 Building and Land-use:
+
+Building_Control_Zones = "C:\Users\urban\Documents\App 2\COJ\Jozi\Building_Control_Zones\Building_Control_Zones.shp"\
+
+Gated_Communities = "C:\Users\urban\Documents\App 2\COJ\Jozi\Gated_Communities\Gated_Communities.shp"
+
+Informal_Settlements_JHB = "C:\Users\urban\Documents\App 2\COJ\Jozi\Informal_Settlements_JHB\Informal_Settlements_JHB.shp"
+
+Open_Spaces = "C:\Users\urban\Documents\App 2\COJ\Jozi\Open_Spaces\Open_Spaces.shp"
+
+Neighbourhood_Farms = "C:\Users\urban\Documents\App 2\COJ\Jozi\Neighbourhood_Farms\Neighbourhood_Farms.shp"
+
+Neighbourhood_Non_Res = "C:\Users\urban\Documents\App 2\COJ\Jozi\Neighbourhood_Non_Res\Neighbourhood_Non_Res.shp"
+
+Neighbourhood_Res = "C:\Users\urban\Documents\App 2\COJ\Jozi\Neighbourhood_Res\Neighbourhood_Res.shp"
+
+These shapefiles must not be visible and switched on by default and build in layer control for all shapefiles and only once clicked and activated on the layer control widget in the top corner of the map do they visualise on the folium map and the attributes on the dataframe. If it is possible can the table display only the the attributes of shapefile that is switched on first and keeps it static - We will build in the dynamic dataframe at a later stage.
+
+So basically the additional input drop down field must act as a filter for the leafletmap and which dataset is visible and shown in the dataframe table as well. 
+
+I will add the rest of the themes for Cape Town and Tshwane once this small test is successful.
+
+Make sure the layers are visible on the map when selected.
+
+Make sure there is a popup when a layer is clicked.
+
+Incorporate GPS coordinate search functionality for the leaflet map - and have a search and reset button below the GPS search. - Put this GPS search functionality on the left hand panel with the dropdowns.
+
+The GPS search function doesnt have to be linked directly to the layer search - it can exist and function on its own but it must search on the same map as the shapefile layers.
+
+Make sure that after searching the GPS coordinates and the search button is clicked the map zooms to the specific location in the leaflet map.
+
+Where it says "Land Use Intelligence" in the Municipal Data Centre tab - remove this header and only keep the updated button "Generate Urban Insights"
+
+
+
+
+
+
